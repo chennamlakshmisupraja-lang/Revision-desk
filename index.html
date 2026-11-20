@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse MGIT MR-22 revision sheets, formulas and MCQs by branch and semester.">
+  <title>MGIT Revision Desk</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="syllabus.js"></script>
+  <script defer src="branches.js"></script>
+  <script defer src="notes.js"></script>
+  <script defer src="branch-notes.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="#home">MGIT Revision Desk</a><span>MR-22</span></header>
+  <div class="layout">
+    <aside>
+      <label for="branch">Branch</label>
+      <select id="branch"></select>
+      <label id="semester-label">Semester</label>
+      <nav id="semesters" aria-labelledby="semester-label"></nav>
+      <label for="search">Find a subject</label>
+      <input id="search" type="search" placeholder="Subject or course code">
+      <div id="subjects" aria-label="Subjects"></div>
+    </aside>
+    <main id="main"></main>
+  </div>
+</body>
+</html>
